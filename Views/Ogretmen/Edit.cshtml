@@ -1,0 +1,36 @@
+@model Ogretmen
+
+<h3>Ogretmen Güncelleme</h3>
+<hr>
+<div class="row">
+    <div class="col-8">
+        <form asp-controller = "Ogretmen" asp-action="Edit" method="post">
+            <input type="hidden" asp-for="OgretmenId">
+            <div class="mb-3">
+                <label asp-for="Ad" class = "form-label">Öğretmen Adı</label>
+                <input asp-for="Ad" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Soyad" class = "form-label">Öğretmen Soyadı</label>
+                <input asp-for="Soyad" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Telefon" class = "form-label">Telefon</label>
+                <input asp-for="Telefon" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Eposta" class = "form-label">E-Posta</label>
+                <input asp-for="Eposta" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="BaslamaTarihi" class = "form-label">Başlama Tarihi</label>
+                <input asp-for="BaslamaTarihi" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+
+        </form>
+</div>
+
+
+
